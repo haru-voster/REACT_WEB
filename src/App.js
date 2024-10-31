@@ -12,7 +12,7 @@ function App() {
       <Navbar/>
       <Header />
       <ExploreMenu category={category} setCategory={setCategory}/>
-      <SaleDisplay category = {category}/>
+      <SaleDisplay category={category}/>
       <SaleItem/>
     </div>
   );

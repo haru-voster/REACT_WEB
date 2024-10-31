@@ -1,23 +1,24 @@
-import React, { useContext } from "react";
+//import React, { useContext } from "react";
 import "./SaleDisplay.css";
-import { StoreContext } from "../../context/StoreContext";
-import SaleItem from "../SaleItem/SaleItem";
+//import { StoreContext } from "../../context/StoreContext";
+//import SaleItem from "../SaleItem/SaleItem";
+///   {sale_list.map((item, index) =>{
+ // return <SaleItem key={index} id={item._id} name={item.name} description={item.description} price={item.price} image={item.image}/>
+          
+//})}
+
 
 const SaleDisplay = ({category}) => {
-  const { sale_list = [] } = useContext(StoreContext) || {}; // Fallback empty array for sale_list
+ // const { sale_list} = useContext(StoreContext) // Fallback empty array for sale_list
 
   return (
-    <div>
-      {sale_list.map((sale) => (
-        <SaleItem
-          key={sale.id}
-          id={sale._id}
-          name={sale.name}
-          price={sale.price}
-          description={sale.description}
-          image={sale.image}
-        />
-      ))}
+    <div className="sale-display" id="sale-display">
+      <h2>Top Featuring </h2>
+      <div className="sale-display-list">
+       
+ 
+      </div>
+      
     </div>
   );
 };
