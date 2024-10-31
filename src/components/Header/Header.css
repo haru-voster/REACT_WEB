@@ -1,0 +1,42 @@
+.header
+{
+    height: 45vw;
+    margin: 10px auto;
+    background: url('/public/lenovo.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5vw;
+  max-width: 50%;
+  bottom: 30%;
+  left: 6vw;
+  animation: fadeIn 3s ;
+  }
+  .header-contents h2
+  {
+    font-weight: 500;
+    color: white;
+    font-size: max(3.5vw, 20px);
+ }
+ .header-contents p
+ {
+    color: white;
+    font-size: 1vw;
+ }
+.header-contents button
+{
+    border: none;
+    color:#747474 ;
+    font-weight: 500;
+    padding: 2vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50%;
+
+}
