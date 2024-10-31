@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import ExploreMenu from './components/ExploreMenu/ExploreMenu';
 import { useState } from 'react';
 import SaleDisplay from './components/SaleDisplay/SaleDisplay';
+import SaleItem from './components/SaleItem/SaleItem';
 
 function App() {
   const [category, setCategory] = useState("All");
@@ -12,7 +13,7 @@ function App() {
       <Header />
       <ExploreMenu category={category} setCategory={setCategory}/>
       <SaleDisplay category = {category}/>
-      
+      <SaleItem/>
     </div>
   );
 }

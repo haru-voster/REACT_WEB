@@ -16,6 +16,7 @@ const SaleItem = ({ id, name, price, description, image }) => {
         <p className="sale-item-desc">{description}</p>
         <p className="sale-item-price">Kshs.{price}</p>
       </div>
+    
     </div>
   );
 };

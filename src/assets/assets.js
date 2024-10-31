@@ -17,11 +17,11 @@ import sale_4 from './HDD PRODESK.webp'
 
 import flash2 from './flash2.jpeg'
 import twitter_icon from './about.jpg'
-import dell from './DISK.webp'
+import new_lap from './new.webp'
 import hdd from './hddexternal.jpeg'
 import flash  from './ssd2.jpg'
 import macbook from './apple_macbook.jpg'
-import acer from './DISK.webp'
+import acer from './apple_macbook.jpg'
 import mac from './apple_macbook.jpg'
 import elitebook from './elitebook.jpg'
 import delllatitude from './Dell_Latitude_7320.png'
@@ -51,7 +51,7 @@ export const assets = {
     flash2,
     flash,
     twitter_icon,
-    dell,
+    new_lap,
     hdd,
     mac,
     macbook,
