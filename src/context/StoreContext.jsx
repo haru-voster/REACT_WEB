@@ -1,16 +1,11 @@
+// StoreContext.js
 import { createContext } from "react";
-import { sale_list } from "../assets/assets";
-export const StoreContext = createContext(null)
+import { sale_list } from "../assets/assets"; // Adjust to the correct path
 
-const StoreContextProvider = (props) =>{
-  const contextValue = {
-     sale_list 
-  }
-  return(
-    <StoreContext.Provider value={contextValue}>
-      {props.children}
-    </StoreContext.Provider> 
-  )
+export const StoreContext = createContext({ sale_list: [] });
 
-}
-export default StoreContextProvider;
+export const StoreProvider = ({ children }) => (
+  <StoreContext.Provider value={{ sale_list }}>
+    {children}
+  </StoreContext.Provider>
+);

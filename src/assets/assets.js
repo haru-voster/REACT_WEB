@@ -10,10 +10,13 @@ import menu_4 from './lap3.jpeg'
 import menu_5 from './lenovo2.webp'
 import menu_6 from './huawei.jpg'
 
-import sale_1 from './lenovo-300x300.webp'
-import sale_2 from './lenovo.webp'
+
+import sale_1 from './lap2.jpeg'
+import sale_2 from './pentium.jpg'
 import sale_3   from './lenovo2.webp'
 import sale_4 from './HDD PRODESK.webp'
+import sale_5 from './new.jpeg'
+import sale_6 from './storage2.jpeg'
 
 import flash2 from './flash2.jpeg'
 import twitter_icon from './about.jpg'
@@ -48,6 +51,8 @@ export const assets = {
     sale_2,
     sale_3,
     sale_4,
+    sale_5,
+    sale_6,
     flash2,
     flash,
     twitter_icon,
@@ -113,7 +118,7 @@ export const sale_list =[
     {
         _id: '3',
         name: "Dell Latitude",
-        image:menu_3,
+        image:sale_1,
         price: '37,000',
         description:"Dell Latitude 5320 13,3 Zoll 1920x1080 Full HD Intel Core i5 512GB SSD 16GB Windows 11 Pro Webcam",
         category: "Dell Latitude"
@@ -130,7 +135,7 @@ export const sale_list =[
     {
         _id: '5',
         name: "Hp Elitebook",
-        image:menu_5,
+        image: sale_6,
         price: '45,000',
         description:"Hp elite book  with 2HD cameras",
         category: "HP Elitebook 840G"
@@ -138,7 +143,7 @@ export const sale_list =[
     {
         _id: '6',
         name: "Huawei Matebook",
-        image:menu_6,
+        image: sale_5,
         price: '90,000',
         description:"HUAWEI MateBook D 16 2024 K16 Zoll HUAWEI FullView  Intel® Core™ i9 Prozessor der 13. Generation",
         category: "Huawei"
