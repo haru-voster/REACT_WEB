@@ -8,7 +8,7 @@ const SaleDisplay = ({ category }) => {
 
   return (
     <div className="sale-display" id="sale-display">
-      <h2>Top Featuring</h2>
+      <h2>BRAND NEW LAPTOPS</h2>
       <div className="sale-display-list">
         {sale_list.map((item, index) => (
           <SaleItem
