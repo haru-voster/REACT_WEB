@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .sale-display
 {
     margin-top: 30px;
@@ -15,3 +16,20 @@
     gap: 10px;
     row-gap: 10px;
 }
+=======
+.sale-display
+{
+    margin-top: 30px;
+}
+.sale-display h2{
+    font-size: ma(2vw, 24px);
+    font-weight: 600;
+}
+.sale-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    margin-top: 30px;
+    gap: 10px;
+    row-gap: 10px;
+}
+>>>>>>> 929701bb3a72e57b3b4184b4fadf973f14a816e2
