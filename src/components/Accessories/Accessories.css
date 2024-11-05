@@ -1,14 +1,14 @@
-.sale-display
+.accessories
 {
     margin-top: 30px;
 }
-.sale-display h2{
+.accessories h2{
     font-size: ma(2vw, 24px);
     font-weight: 600;
     text-align: center;
     color: blue;
 }
-.sale-display-list{
+.accessories-list{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
     margin-top: 20px;

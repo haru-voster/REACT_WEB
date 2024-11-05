@@ -13,7 +13,8 @@ const Navbar = ({setShowLogin}) => {
       <ul className='navbar-menu'>
       <Link to='/' onClick={()=>setMenu("HOME")} className={menu==="HOME"?"active":""}>HOME</Link>
       <a href='#explore-menu' onClick={()=>setMenu("ABOUT")} className={menu==="ABOUT"?"active":""}>MENU</a>
-      <a href='#sale-display' onClick={()=>setMenu("STORE")} className={menu==="STORE"?"active":""}>STORE</a>
+      <a href='#sale-display' onClick={()=>setMenu("LAPTOPS")} className={menu==="LAPTOPS"?"active":""}>LAPTOPS</a>
+      <a href='#accessories' onClick={()=>setMenu("ACCESSORIES")} className={menu==="ACCESSORIES"?"active":""}>ACCESSORIES</a>
       <a href='#footer' onClick={()=>setMenu("CONTACT")} className={menu==="CONTACT"?"active":""}>CONTACT</a>
     </ul>
     <div className='navbar-right'>

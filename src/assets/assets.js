@@ -32,7 +32,10 @@ import sale_10 from "./hp14.jpg"
 import sale_11 from './hp spectre.webp'
 import sale_12 from "./hp14.jpg"
 
+//accessories
 import flash2 from './flash2.jpeg'
+import flash3 from './flash3.jpeg'
+
 import twitter_icon from './about.jpg'
 import new_lap from './new.jpg'
 import hdd from './hddexternal.jpeg'
@@ -71,6 +74,7 @@ export const assets = {
     menu_4,
     menu_5,
     menu_6,
+    //laptops
     sale_1,
     sale_2,
     sale_3,
@@ -83,8 +87,11 @@ export const assets = {
     sale_10,
     sale_11,
     sale_12,
+    //accessories
     flash2,
     flash,
+    flash3,
+    //others
     twitter_icon,
     new_lap,
     hdd,
@@ -136,7 +143,7 @@ export const sale_list =[
         name: "MacBook Pro",
         image: sale_1,
         price: 130000,
-        description:"Apple MacBook Air MGN63LL/A with M1 Chip 8GB 256SSD 13.3 Inch Display(Grey)",
+        description:"Apple MacBook Air MGN63LL/A with M1 Chip 8GB 256SSD 13.3 Inch Display(Grey) Mac OS",
         category: "Apple"
         
     },
@@ -150,19 +157,19 @@ export const sale_list =[
     },
     {
         _id: '3',
-        name: "HP Elitebook ",
+        name: "HP Elite ",
         image:sale_3,
         price: 45000,
-        description:"HP ELITEBOOK 830 G7 13.3″ 60Hz FHD IPS Laptop (Intel i5-10310U 4-Core, 16GB RAM, 512GB PCIe SSD, Backlit KB, Fingerprint, 2 Thunderbolt 4 (Type-C), Webcam, Win11P)",
+        description:"HP ELITEBOOK 830 G7 13.3″ 60Hz 16GB RAM, 512GB PCIe SSD, Webcam, Win11P), touchscreen",
         category: "Hp"
         
     },
     {
         _id: '4',
-        name: "HP Probook 830 G5",
+        name: "HP-Probook",
         image:sale_4,
         price: 25000,
-        description:"HP EliteBook Revolve 810 G5 Intel Core i5 5th Gen 8GB RAM 256GB SSD 11.6 Inches HD* UWVA Touchscreen Display Win 11 Pro",
+        description:"Probook Revolve 830 G5 8thGen 8GB, 256GB SSD 11.6 Inches, Touchscreen ",
         category: "HP"
     },
     {
@@ -178,7 +185,7 @@ export const sale_list =[
         name: "Lenovo Thinkpad",
         image: sale_6,
         price: 28000,
-        description:"Lenovo Thinkpad T470s – intel Core i7- 7th Gen Lenovo Thinkpad T470s ",
+        description:"Lenovo Thinkpad T470s – intel Core i7- 7th Gen 4GB-500GB Lenovo Thinkpad T470s, win11pro, ",
         category: "lenovo"
     },
     {
@@ -186,7 +193,7 @@ export const sale_list =[
         name: "Dell Latitude 7420",
         image: sale_7,
         price: 44000,
-        description:"DELL 7420 Core i5 16GB RAM 512GB SSD 12th GEN",
+        description:"DELL 7420 Core i5 16GB RAM 512GB SSD 12th GEN, Backlight Keyboard Non-Touch, win11pro",
         category: "Dell"
     },
     {
@@ -194,7 +201,7 @@ export const sale_list =[
         name: "Dell-7440",
         image: sale_8,
         price: 19500,
-        description:"Dell Latitude 7440 Core i7 8GB RAM 256 GB SSD",
+        description:"Dell Latitude 7440 Intel Core i7 8GB RAM 256 GB SSD, Backlight keyboard win11Pro, Non-touch",
         category: "Dell"
     },
     {
@@ -210,7 +217,7 @@ export const sale_list =[
         name: "Hp Elitebook",
         image: sale_10,
         price: 18500,
-        description:"Newest HP 14inch HD Laptop, Win. 11, Intel Celeron Dual-Core Processor Up to 2.60GHz, 4GB RAM, 128GB SSD, Webcam, Dale Pink(Renewed) (Dale Blue)",
+        description:"Newest HP 14inch HD Laptop, Win. 11, Intel Celeron Dual-Core Processor Up to 2.60GHz, 4GB RAM, 128GB SSD, Webcam",
         category: "Hp"
     },
     {
@@ -218,7 +225,7 @@ export const sale_list =[
         name: "Hp Spectre",
         image: sale_11,
         price: 60000,
-        description:"HP Spectre x360 2-in-1 Laptop  Intel Core i7 13th Gen 16GB RAM 1TBB SSD 13.5 Inch WUXGA Touchscreen",
+        description:"HP Spectre x360 2-in-1 Laptop  Intel Core i7 13th Gen 16GB RAM 1TBB SSD 13.5 Inch, win11 Touchscreen",
         category: "Hp"
     },
     {
@@ -226,8 +233,206 @@ export const sale_list =[
         name: "Hp Elitebook",
         image: sale_12,
         price: 48500,
-        description:"HP EliteBook X360 1030 G3 Intel Core i7 8th Gen 16GB RAM 512GB SSD 13.3inch FHD Touchscreen Display",
+        description:"HP EliteBook X360 1030 G3 Intel Core i7 8th Gen 16GB RAM 512GB SSD 13.3inch FHD Touchscreen Display+Backlight, win11pro",
         category: "Hp"
     }
    
+]
+//accessories added
+export const accessories_list=[
+    {
+        _id: '1',
+        name: "Monitor",
+        image: flash2,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '2',
+        name: "Monitor",
+        image: flash,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '3',
+        name: "Monitor",
+        image: flash3,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '4',
+        name: "Monitor",
+        image: flash2,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '5',
+        name: "Monitor",
+        image: flash2,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '6',
+        name: "Monitor",
+        image: flash3,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '1',
+        name: "Monitor",
+        image: flash2,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '2',
+        name: "Monitor",
+        image: flash,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '3',
+        name: "Monitor",
+        image: flash3,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '4',
+        name: "Monitor",
+        image: flash2,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '5',
+        name: "Monitor",
+        image: flash2,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '6',
+        name: "Monitor",
+        image: flash3,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '1',
+        name: "Monitor",
+        image: flash2,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '2',
+        name: "Monitor",
+        image: flash,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '3',
+        name: "Monitor",
+        image: flash3,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '4',
+        name: "Monitor",
+        image: flash2,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '5',
+        name: "Monitor",
+        image: flash2,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '6',
+        name: "Monitor",
+        image: flash3,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '1',
+        name: "Monitor",
+        image: flash2,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '2',
+        name: "Monitor",
+        image: flash,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '3',
+        name: "Monitor",
+        image: flash3,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '4',
+        name: "Monitor",
+        image: flash2,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '5',
+        name: "Monitor",
+        image: flash2,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+    {
+        _id: '6',
+        name: "Monitor",
+        image: flash3,
+        price: 130000,
+        description:"monitor",
+        category: "Monitor"
+    },
+
+
+
 ]
