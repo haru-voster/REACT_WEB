@@ -241,7 +241,7 @@ export const sale_list =[
 //accessories added
 export const accessories_list=[
     {
-        _id: '1',
+        _id: '13',
         name: "Monitor",
         image: flash2,
         price: 130000,
@@ -249,7 +249,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '2',
+        _id: '14',
         name: "Monitor",
         image: flash,
         price: 130000,
@@ -257,7 +257,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '3',
+        _id: '15',
         name: "Monitor",
         image: flash3,
         price: 130000,
@@ -265,7 +265,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '4',
+        _id: '16',
         name: "Monitor",
         image: flash2,
         price: 130000,
@@ -273,7 +273,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '5',
+        _id: '17',
         name: "Monitor",
         image: flash2,
         price: 130000,
@@ -281,7 +281,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '6',
+        _id: '18',
         name: "Monitor",
         image: flash3,
         price: 130000,
@@ -289,7 +289,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '1',
+        _id: '19',
         name: "Monitor",
         image: flash2,
         price: 130000,
@@ -297,7 +297,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '2',
+        _id: '20',
         name: "Monitor",
         image: flash,
         price: 130000,
@@ -305,7 +305,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '3',
+        _id: '21',
         name: "Monitor",
         image: flash3,
         price: 130000,
@@ -313,7 +313,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '4',
+        _id: '22',
         name: "Monitor",
         image: flash2,
         price: 130000,
@@ -321,7 +321,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '5',
+        _id: '23',
         name: "Monitor",
         image: flash2,
         price: 130000,
@@ -329,7 +329,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '6',
+        _id: '24',
         name: "Monitor",
         image: flash3,
         price: 130000,
@@ -337,7 +337,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '1',
+        _id: '25',
         name: "Monitor",
         image: flash2,
         price: 130000,
@@ -345,7 +345,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '2',
+        _id: '26',
         name: "Monitor",
         image: flash,
         price: 130000,
@@ -353,7 +353,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '3',
+        _id: '27',
         name: "Monitor",
         image: flash3,
         price: 130000,
@@ -361,7 +361,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '4',
+        _id: '28',
         name: "Monitor",
         image: flash2,
         price: 130000,
@@ -369,7 +369,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '5',
+        _id: '29',
         name: "Monitor",
         image: flash2,
         price: 130000,
@@ -377,7 +377,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '6',
+        _id: '30',
         name: "Monitor",
         image: flash3,
         price: 130000,
@@ -385,7 +385,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '1',
+        _id: '31',
         name: "Monitor",
         image: flash2,
         price: 130000,
@@ -393,7 +393,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '2',
+        _id: '32',
         name: "Monitor",
         image: flash,
         price: 130000,
@@ -401,7 +401,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '3',
+        _id: '33',
         name: "Monitor",
         image: flash3,
         price: 130000,
@@ -409,7 +409,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '4',
+        _id: '34',
         name: "Monitor",
         image: flash2,
         price: 130000,
@@ -417,7 +417,7 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '5',
+        _id: '35',
         name: "Monitor",
         image: flash2,
         price: 130000,
@@ -425,14 +425,12 @@ export const accessories_list=[
         category: "Monitor"
     },
     {
-        _id: '6',
+        _id: '36',
         name: "Monitor",
         image: flash3,
         price: 130000,
         description:"monitor",
         category: "Monitor"
     },
-
-
 
 ]
