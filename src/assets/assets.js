@@ -32,13 +32,8 @@ import sale_10 from "./hp14.jpg"
 import sale_11 from './hp spectre.webp'
 import sale_12 from "./hp14.jpg"
 
-//accessories
-import flash2 from './flash2.jpeg'
-import flash3 from './flash3.jpeg'
-
 import twitter_icon from './about.jpg'
 import new_lap from './new.jpg'
-import hdd from './hddexternal.jpeg'
 import flash  from './flash3.jpeg'
 import macbook from './apple_macbook.jpg'
 import acer from './apple_macbook.jpg'
@@ -52,6 +47,12 @@ import starts from './rating_starts.png'
 import add_icon from './add_item.png'
 import remove_icon from './remove_icon.png'
 import add_icon2 from './add_icon2.png'
+///accessories
+import ssd from './ssd.jpg'
+import hdd2 from './HDD.jpg'
+import flash2 from './flash2.jpeg'
+import flash3 from './flash3.jpeg'
+import SATA from './SATA.jpg'
 
 
 
@@ -88,13 +89,14 @@ export const assets = {
     sale_11,
     sale_12,
     //accessories
-    flash2,
+    hdd2,
+    ssd,
     flash,
     flash3,
+    SATA,
     //others
     twitter_icon,
     new_lap,
-    hdd,
     mac,
     macbook,
     acer,
@@ -235,43 +237,42 @@ export const sale_list =[
         price: 48500,
         description:"HP EliteBook X360 1030 G3 Intel Core i7 8th Gen 16GB RAM 512GB SSD 13.3inch FHD Touchscreen Display+Backlight, win11pro",
         category: "Hp"
-    }
-   
-]
-//accessories added
-export const accessories_list=[
+    },
+    //accessories
     {
         _id: '13',
-        name: "Monitor",
-        image: flash2,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "SSD",
+        image: SATA,
+        price: 13000,
+        description:"Samsung 870 EVO 1TB Internal SSD SATA",
+        category: "disk"
     },
     {
         _id: '14',
-        name: "Monitor",
-        image: flash,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: " HDD Drive",
+        image: hdd2,
+        price: 3000,
+        description:"1TB HDD Drive, samsung version, durable",
+        category: "disk"
     },
+ 
     {
         _id: '15',
-        name: "Monitor",
-        image: flash3,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "SSD",
+        image: ssd,
+        price: 10000,
+        description:" Samsung 870 EVO 1TB EXTERNAL SSD SATA.",
+        category: "disk"
     },
     {
         _id: '16',
-        name: "Monitor",
-        image: flash2,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "Flash Disk",
+        image: flash,
+        price: 1300,
+        description:"32GB ScanDisk, Durable",
+        category: "disk"
     },
+
     {
         _id: '17',
         name: "Monitor",
@@ -433,4 +434,11 @@ export const accessories_list=[
         category: "Monitor"
     },
 
+    //
+   
+]
+//accessories added
+
+export const accessories_list=[
+    
 ]

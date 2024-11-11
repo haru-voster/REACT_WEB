@@ -12,8 +12,6 @@ import { Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home/Home";
 import Cart from "./pages/Cart/Cart";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
-import Accessories from './components/Accessories/Accessories';
-
 
 function App() {
   const [category, setCategory] = useState("All");
@@ -33,7 +31,7 @@ function App() {
         <ExploreMenu category={category} setCategory={setCategory} />
         <SaleDisplay />
         <SaleItem />
-        <Accessories/>
+        
         <Appdownload/>
        
         <Footer /> {/* Ensure Footer is added here */}

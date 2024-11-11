@@ -1,15 +1,22 @@
 import { createContext, useState } from "react";
 import { sale_list, accessories_list } from "../assets/assets"; // Adjust to the correct path
 
-export const StoreContext = createContext({ sale_list: [] });
+export const StoreContext = createContext({
+  sale_list: [],
+  accessories_list: [],
+  cartItems: {},
+});
 
 export const StoreProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState({});
   const [selectedCategory, setSelectedCategory] = useState("sale");
 
+  // Helper function to get the correct item list based on the selected category
+  const getItemList = () => (selectedCategory === "sale" ? sale_list : accessories_list);
+
   const addToCart = (itemId) => {
     setCartItems((prev) => {
-      const itemList = selectedCategory === "sale" ? sale_list : accessories_list;
+      const itemList = getItemList();
       const itemInfo = itemList.find((product) => product._id === itemId);
       if (itemInfo) {
         return {
@@ -17,7 +24,7 @@ export const StoreProvider = ({ children }) => {
           [itemId]: (prev[itemId] || 0) + 1,
         };
       }
-      return prev; // Return previous state if item not found
+      return prev;
     });
   };
 
@@ -35,11 +42,12 @@ export const StoreProvider = ({ children }) => {
 
   const getTotalCartAmount = () => {
     let totalAmount = 0;
-    for (const item in cartItems) {
-      if (cartItems[item] > 0) {
-        const itemList = sale_list.find((product) => product._id === item) || accessories_list.find((product) => product._id === item);
-        if (itemList) {
-          totalAmount += itemList.price * cartItems[item];
+    for (const itemId in cartItems) {
+      if (cartItems[itemId] > 0) {
+        const itemList = sale_list.concat(accessories_list);
+        const itemInfo = itemList.find((product) => product._id === itemId);
+        if (itemInfo) {
+          totalAmount += itemInfo.price * cartItems[itemId];
         }
       }
     }
