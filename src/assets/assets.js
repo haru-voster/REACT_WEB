@@ -53,10 +53,22 @@ import hdd2 from './HDD.jpg'
 import flash2 from './flash2.jpeg'
 import flash3 from './flash3.jpeg'
 import SATA from './SATA.jpg'
-
-
+import lexarssd from './lexarssd.webp'
+import mouse1 from './computer-mouse.webp'
+import mouse2 from './wireless.jpg'
+import mouse3 from './longtech.jpg'
+import hpv20 from './hpv20.webp'
+import hp14 from './hp14inch.jpg'
+import screen32 from './vitron32.webp'
+import screen_32 from './vitron_32.jpg'
+import screen27 from './screen27.jpg'
+import hpcharger from './hpcharger.jpg'
+import lenovocharger from './lenovocharger.jpg'
+import convertor from './HDMI_VGA.webp'
+import vga from './5MVGA.webp'
 
 export const assets = {
+   
     logo,
     laptops,
     header_img,
@@ -94,6 +106,20 @@ export const assets = {
     flash,
     flash3,
     SATA,
+    lexarssd,
+    mouse1,
+    mouse2,
+    mouse3,
+    hpv20,
+    hp14,
+    screen32,
+    screen_32,
+    screen27,
+    hpcharger,
+    lenovocharger,
+    convertor,
+    vga,
+
     //others
     twitter_icon,
     new_lap,
@@ -266,92 +292,92 @@ export const sale_list =[
     },
     {
         _id: '16',
-        name: "Flash Disk",
-        image: flash,
-        price: 1300,
-        description:"32GB ScanDisk, Durable",
+        name: "SSD",
+        image: lexarssd,
+        price: 8000,
+        description:"Lexar Transcend 2.5″ 512GB SSD",
         category: "disk"
     },
 
     {
         _id: '17',
         name: "Monitor",
-        image: flash2,
-        price: 130000,
-        description:"monitor",
+        image: screen27,
+        price: 29990,
+        description:"Hp m27fw 1920 x 1080 @75HZ, 2xHDMI | 1xVGA'",
         category: "Monitor"
     },
     {
         _id: '18',
         name: "Monitor",
-        image: flash3,
-        price: 130000,
-        description:"monitor",
+        image: screen32,
+        price: 12900,
+        description:"Vitron 32 inch Digital LED TV Free to air channels",
         category: "Monitor"
     },
     {
         _id: '19',
         name: "Monitor",
-        image: flash2,
-        price: 130000,
-        description:"monitor",
+        image: screen_32,
+        price: 12700,
+        description:"Vitron 32 Inch Digital Flat Screen TV + FREE TV Antenna",
         category: "Monitor"
     },
     {
         _id: '20',
-        name: "Monitor",
-        image: flash,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "charger",
+        image: lenovocharger,
+        price: 2500,
+        description:"Lenovo-20V 65W USB-tip Original AC Adapter",
+        category: "charger"
     },
     {
         _id: '21',
-        name: "Monitor",
-        image: flash3,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "charger",
+        image: hpcharger,
+        price: 1500,
+        description:"HP 19V 4.74A Big Pin AC Adapter Charger",
+        category: "charger"
     },
     {
         _id: '22',
-        name: "Monitor",
-        image: flash2,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name:"Wired Mouse",
+        image: mouse1,
+        price: 800,
+        description:"HP Wired Mouse X500, smooth scrolling",
+        category: "mouse"
     },
     {
         _id: '23',
-        name: "Monitor",
-        image: flash2,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "Mouse",
+        image: mouse2,
+        price: 1200,
+        description:"Wireless Rechargeable Wireless Mouse, 2.4G Optical Silent Mouse",
+        category: "mouse"
     },
     {
         _id: '24',
-        name: "Monitor",
-        image: flash3,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: " Wireless Mouse",
+        image: mouse3,
+        price: 1800,
+        description:"Logitech M171 Wireless Mouse ",
+        category: "mouse"
     },
     {
         _id: '25',
-        name: "Monitor",
-        image: flash2,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "HDMI Convertor",
+        image: convertor,
+        price: 1200,
+        description:"HDMI to VGA Male Converter With Audio Cable ",
+        category: "VGA"
     },
     {
         _id: '26',
-        name: "Monitor",
-        image: flash,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "VGA",
+        image: vga,
+        price: 800,
+        description:"5M VGA display cable",
+        category: "VGA"
     },
     {
         _id: '27',
