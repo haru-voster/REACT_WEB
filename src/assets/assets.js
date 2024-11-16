@@ -65,7 +65,15 @@ import screen27 from './screen27.jpg'
 import hpcharger from './hpcharger.jpg'
 import lenovocharger from './lenovocharger.jpg'
 import convertor from './HDMI_VGA.webp'
+import ram from './ram.jpg'
 import vga from './5MVGA.webp'
+import ram1 from './ram1.jpg'
+import ram2 from './ram2.jpeg'
+import ram3 from './ram3.jpeg'
+import elitebattery from './elitebattery.webp'
+import toshiba from './toshiba.jpg'
+import laptopstand from './laptopstand.jpg'
+import keyboard from './keyboard.webp'
 
 export const assets = {
    
@@ -119,6 +127,14 @@ export const assets = {
     lenovocharger,
     convertor,
     vga,
+    ram,
+    ram1,
+    ram2,
+    ram3,
+    elitebattery,
+    toshiba,
+    laptopstand,
+    keyboard,
 
     //others
     twitter_icon,
@@ -381,83 +397,83 @@ export const sale_list =[
     },
     {
         _id: '27',
-        name: "Monitor",
-        image: flash3,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "DDR3 RAM",
+        image: ram1,
+        price: 5500,
+        description:"8gb DDR3 12800 desktop",
+        category: "ram"
     },
     {
         _id: '28',
-        name: "Monitor",
-        image: flash2,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "DDR4 RAM",
+        image: ram,
+        price: 4500,
+        description:"Crucial 8GB DDR4 3200 Laptop RAM",
+        category: "ram"
     },
     {
         _id: '29',
         name: "Monitor",
-        image: flash2,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        image: ram3,
+        price: 10000,
+        description:"Samsung 16GB DDR4 2400 Laptop Ram",
+        category: "ram"
     },
     {
         _id: '30',
-        name: "Monitor",
-        image: flash3,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "DDR3 RAM",
+        image: ram2,
+        price: 10000,
+        description:"SAMSUNG 8GB RAM DDR3 10600",
+        category: "ram"
     },
     {
         _id: '31',
-        name: "Monitor",
-        image: flash2,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "HP Elitebook",
+        image: elitebattery,
+        price: 4999,
+        description:"HP Elitebook 840 G3 battery CS03xl Original Hp laptop 14.4V/14.8V,43Wh ",
+        category: "Battery"
     },
     {
         _id: '32',
-        name: "Monitor",
-        image: flash,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "Toshiba",
+        image: toshiba,
+        price: 4500,
+        description:"Toshiba Satellite L50-A laptop Battery, 14.4V/14.8V,43Wh",
+        category: "Battery"
     },
     {
         _id: '33',
-        name: "Monitor",
+        name: "Scan Disk",
         image: flash3,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        price: 1900,
+        description:"32GB SANDISK FLASH DISK",
+        category: "flash"
     },
     {
         _id: '34',
-        name: "Monitor",
+        name: "USB",
         image: flash2,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        price: 1000,
+        description:"Generic Enclosure For 2.5″ Hard Disk USB 3.0",
+        category: "USB"
     },
     {
         _id: '35',
-        name: "Monitor",
-        image: flash2,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "Laptop Stand",
+        image: laptopstand,
+        price: 2500,
+        description:"Portable Foldable Aluminium Alloy Laptop Stand",
+        category: "stand"
     },
     {
         _id: '36',
-        name: "Monitor",
-        image: flash3,
-        price: 130000,
-        description:"monitor",
-        category: "Monitor"
+        name: "Keyboard",
+        image: keyboard,
+        price: 10000,
+        description:"New Keyboard for HP EliteBook 830 G5, 840 G5, 846 G5, with Backlit",
+        category: "keyboard"
     },
 
     //
