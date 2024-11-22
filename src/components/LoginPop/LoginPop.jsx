@@ -1,13 +1,39 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./LoginPop.css";
 import { assets } from "../../assets/assets";
+import { StoreContext } from "../../context/StoreContext";
 
 const LoginPop = ({setShowLogin}) => {
-  const [currentState, setCurrentState] = useState("Login");
+const {url} = useContext(StoreContext)
 
+  const [currentState, setCurrentState] = useState("Sign Up");
+  const [data, setData] = useState({
+    name:"",
+    email:"",
+    phone:"",
+    password:""
+
+  })
+  const onChangeHandler = (event)=>{
+    const name = event.target.name;
+    const value = event.target.value;
+    setData(data=>({...data,[name]:value}))
+
+  }
+  //useEffect(()=>{
+  //  console.log(data);
+  //}, [data])
+
+  //use url
+
+  const onLogin = async(event)=>{
+    event.preventDefault()
+     
+
+  }
   return (
     <div className="login-pop">
-      <form className="login-pop-container">
+      <form onSubmit={onLogin} className="login-pop-container">
         <div className="login-pop-title">
           <h2>{currentState}</h2>
           <img
@@ -16,13 +42,13 @@ const LoginPop = ({setShowLogin}) => {
             alt=""/>
         </div>
         <div className="login-pop-inputs">
-            {currentState==="Login"?<></>:<input type="text" placeholder="Your Name" required />}
+            {currentState==="Login"?<></>:<input name="name" onChange={onChangeHandler} value={data.name} type="text" placeholder="Your Name" required />}
           
-          <input type="email" placeholder="Your Email" required />
-          <input type="phone_number" placeholder="Your Contact" required />
-          <input type="password" placeholder="Password" required />
-        </div>
-        <button>{currentState==="Sign Up"?"Create account":"Login"}</button>
+          <input name= "email" onChange={onChangeHandler} value={data.email} type="email" placeholder="Your Email" required />
+          <input name='phone' onChange={onChangeHandler} value={data.phone} type="phone_number" placeholder="Phone Number" required />
+          <input name="password" onChange={onChangeHandler} value={data.password} type="password" placeholder="Password" required />
+        </div>   
+        <button type="submit">{currentState==="Sign Up"?"Create account":"Login"}</button>
         <div className="login-pop-condition">
             <input type="checkbox" required/>
             <p>By continuing, I agree to the terms and privacy of the company.</p>
@@ -37,3 +63,4 @@ const LoginPop = ({setShowLogin}) => {
 };
 
 export default LoginPop;
+//

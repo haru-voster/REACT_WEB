@@ -33,7 +33,7 @@
 .login-pop-inputs{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 .login-pop-inputs{
     outline: none;

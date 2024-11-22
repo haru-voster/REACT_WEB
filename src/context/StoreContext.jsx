@@ -10,7 +10,7 @@ export const StoreContext = createContext({
 export const StoreProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState({});
   const [selectedCategory, setSelectedCategory] = useState("sale");
-
+  const url= "http://loocalhost:4000"
   // Helper function to get the correct item list based on the selected category
   const getItemList = () => (selectedCategory === "sale" ? sale_list : accessories_list);
 
@@ -67,6 +67,7 @@ export const StoreProvider = ({ children }) => {
     getTotalCartAmount,
     selectedCategory,
     setCategory,
+    url,
   };
 
   return (
