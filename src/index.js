@@ -7,6 +7,9 @@ import './index.css';
 // Create root
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+export default function Dummy(){
+  return <h1>this is dummy</h1>
+}
 // Render App
 root.render(
   <BrowserRouter>

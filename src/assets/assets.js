@@ -74,6 +74,7 @@ import elitebattery from './elitebattery.webp'
 import toshiba from './toshiba.jpg'
 import laptopstand from './laptopstand.jpg'
 import keyboard from './keyboard.webp'
+import profile_icon from './profile_icon.jpg' 
 
 export const assets = {
    
@@ -151,6 +152,7 @@ export const assets = {
     add_icon,
     add_icon2,
     remove_icon,
+    profile_icon,
 
 }
 
