@@ -3,18 +3,18 @@ import "./SaleItem.css";
 import { assets } from "../../assets/assets";
 import { StoreContext } from "../../context/StoreContext";
 
-const SaleItem = ({ id, name, price, description, image }) => {
-  const { cartItems = {}, addToCart, removeFromCart } = useContext(StoreContext);
+const SaleItem = ({ id,name,price,description,image }) => {
+  const {cartItems,addToCart,removeFromCart, url  } = useContext(StoreContext);
 
-  if (!addToCart || !removeFromCart) {
-    // Return null or a loading message if context values are missing
-    return <div>Loading...</div>;
-  }
+  // if (!addToCart || !removeFromCart) {
+  //   // Return null or a loading message if context values are missing
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <div className="sale-item">
       <div className="sale-item-img-container">
-        <img className="sale-item-image" src={image} alt="" />
+        <img className="sale-item-image" src={ url+"/image/"+image} alt="" />
         {
           !cartItems[id]
           ? <img className="add" onClick={() => addToCart(id)} src={assets.add_icon} alt=""/>

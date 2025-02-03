@@ -1,73 +1,90 @@
-import { createContext, useState } from "react";
-import { sale_list, accessories_list } from "../assets/assets"; // Adjust to the correct path
+import axios from "axios";
+import { createContext, useEffect, useState } from "react";
+
 
 export const StoreContext = createContext({
-  sale_list: [],
-  accessories_list: [],
-  cartItems: {},
+  // sale_list: [],
+  // accessories_list: [],
+  // cartItems: [],
 });
 
 export const StoreProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState({});
-  const [selectedCategory, setSelectedCategory] = useState("sale");
+  const [cartItems, setCartItems,  accessories_list] = useState({});
+  
   const url = "http://localhost:4000";
   const [token, setToken] = useState("");
+  const [sale_list, setSaleList] = useState([])
   // Helper function to get the correct item list based on the selected category
-  const getItemList = () => (selectedCategory === "sale" ? sale_list : accessories_list);
+  
 
-  const addToCart = (itemId) => {
-    setCartItems((prev) => {
-      const itemList = getItemList();
-      const itemInfo = itemList.find((product) => product._id === itemId);
-      if (itemInfo) {
-        return {
-          ...prev,
-          [itemId]: (prev[itemId] || 0) + 1,
-        };
+  const addToCart = async (itemId) => {
+    if(!cartItems[itemId]){
+      setCartItems((prev) =>({...prev, [itemId]:1}))
       }
-      return prev;
-    });
-  };
+      else{
+        setCartItems((prev)=>({...prev, [itemId]:prev[itemId] + 1}))
+      }
+      if(token){
+        await axios.post(url+"/api/cart/add", {itemId},{headers:{token}})
+      }
+    }    
+  const removeFromCart =  async (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+    if(token){
+      await axios.post(url+"/api/cart/remove", {itemId},{headers:{token}})
 
-  const removeFromCart = (itemId) => {
-    setCartItems((prev) => {
-      if (prev[itemId] <= 1) {
-        const updatedItems = { ...prev };
-        delete updatedItems[itemId];
-        return updatedItems;
-      } else {
-        return { ...prev, [itemId]: prev[itemId] - 1 };
-      }
-    });
+    }
   };
 
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const itemId in cartItems) {
       if (cartItems[itemId] > 0) {
-        const itemList = sale_list.concat(accessories_list);
-        const itemInfo = itemList.find((product) => product._id === itemId);
-        if (itemInfo) {
+        
+       let itemInfo = sale_list.find((product) => product._id === itemId);
           totalAmount += itemInfo.price * cartItems[itemId];
         }
       }
+      return totalAmount;
     }
-    return totalAmount;
-  };
+   
+  
 
-  const setCategory = (category) => {
-    setSelectedCategory(category);
-  };
+  // const setCategory = (category) => {
+  //   setSelectedCategory(category);
+  // };
+  const fetchSaleList =  async()=>{
+    const response = await axios.get(url+"/api/sale/list");
+    setSaleList(response.data.data)
+
+  } 
+
+  const loadCartData = async (token) =>{
+    const response = await axios.post(url+"/api/cart/get",{}, {headers:{token}})
+    setCartItems(response.data.cartData);
+  }
+  useEffect(()=>{
+   
+    async function loadData(){ 
+      await fetchSaleList()
+      if (localStorage.getItem("token")){
+        setToken(localStorage.getItem("token"));
+        await loadCartData(localStorage.getItem("token"));
+      }
+    }
+    loadData()
+  }, )
 
   const contextValue = {
     sale_list,
-    accessories_list,
     cartItems,
     addToCart,
+    loadCartData,
     removeFromCart,
     getTotalCartAmount,
-    selectedCategory,
-    setCategory,
+    accessories_list,
+    // selectedCategory,
+    // setCategory,
     url,
     token,
     setToken

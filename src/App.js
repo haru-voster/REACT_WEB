@@ -12,6 +12,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home/Home";
 import Cart from "./pages/Cart/Cart";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
+import MyOrders from './pages/MyOrders/MyOrders';
 
 function App() {
   const [category, setCategory] = useState("All");
@@ -26,6 +27,8 @@ function App() {
         <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<PlaceOrder />} />
+          <Route path='/verify' element={<verify/>}/>
+          <Route path='/myorders' element={<MyOrders/>}/>
         </Routes>
         <Header />
         <ExploreMenu category={category} setCategory={setCategory} />

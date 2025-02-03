@@ -22,11 +22,14 @@
     background-color: #e2e2e2;
     border: none;
 }
-.cart-items-items .close
-{
+.close {
+    color: tomato;
     cursor: pointer;
-     
+    font-size: 1.2em; 
+    font-weight: bold; 
+    transition: color 0.2s ease;
 }
+
 .cart-bottom{
     margin-top: 80px;
     justify-content: space-between;

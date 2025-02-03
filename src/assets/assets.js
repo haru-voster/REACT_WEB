@@ -10,6 +10,7 @@ import email_icon from './email_icon.jpg'
 import app_store from './app_store.png'
 import play_store from './play_store.png'
 import cross_icon from './cross_icon.jpg'
+import parcel_icon from './parcel_icon.jpg'
 
 import menu_1 from './Apple.jpg'
 import menu_2 from './lap4.jpeg'
@@ -52,15 +53,15 @@ import ssd from './ssd.jpg'
 import hdd2 from './HDD.jpg'
 import flash2 from './flash2.jpeg'
 import flash3 from './flash3.jpeg'
-import SATA from './SATA.jpg'
+
 import lexarssd from './lexarssd.webp'
 import mouse1 from './computer-mouse.webp'
 import mouse2 from './wireless.jpg'
 import mouse3 from './longtech.jpg'
 import hpv20 from './hpv20.webp'
 import hp14 from './hp14inch.jpg'
-import screen32 from './vitron32.webp'
-import screen_32 from './vitron_32.jpg'
+
+
 import screen27 from './screen27.jpg'
 import hpcharger from './hpcharger.jpg'
 import lenovocharger from './lenovocharger.jpg'
@@ -90,6 +91,7 @@ export const assets = {
     app_store,
     play_store,
     cross_icon,
+    parcel_icon,
     menu_2,
     menu_1,
     menu_3,
@@ -114,15 +116,13 @@ export const assets = {
     ssd,
     flash,
     flash3,
-    SATA,
     lexarssd,
     mouse1,
     mouse2,
     mouse3,
     hpv20,
     hp14,
-    screen32,
-    screen_32,
+ 
     screen27,
     hpcharger,
     lenovocharger,
@@ -197,7 +197,7 @@ export const sale_list =[
         _id: '2',
         name: "Apple",
         image:sale_2,
-        price: 90000,
+        price: 50000,
         description:"2019 Apple MacBook Pro with 1.4GHz Intel Core i5 (13 inch, 8GB RAM, 256GB SSD) – Space Gray",
         category: "Apple"
     },
@@ -214,7 +214,7 @@ export const sale_list =[
         _id: '4',
         name: "HP-Probook",
         image:sale_4,
-        price: 25000,
+        price: 22500,
         description:"Probook Revolve 830 G5 8thGen 8GB, 256GB SSD 11.6 Inches, Touchscreen ",
         category: "HP"
     },
@@ -222,7 +222,7 @@ export const sale_list =[
         _id: '5',
         name: "Lenovo T460S",
         image: sale_5,
-        price: 25000,
+        price: 22000,
         description:"Lenovo T460s 6th Gen Intel Core i5-6300UÂ 8GB RAM 256GB SSD 14″ Touchscreen",
         category: "Lenovo"
     },
@@ -230,7 +230,7 @@ export const sale_list =[
         _id: '6', 
         name: "Lenovo Thinkpad",
         image: sale_6,
-        price: 28000,
+        price: 25000,
         description:"Lenovo Thinkpad T470s – intel Core i7- 7th Gen 4GB-500GB Lenovo Thinkpad T470s, win11pro, ",
         category: "lenovo"
     },
@@ -270,7 +270,7 @@ export const sale_list =[
         _id: '11', 
         name: "Hp Spectre",
         image: sale_11,
-        price: 60000,
+        price: 55000,
         description:"HP Spectre x360 2-in-1 Laptop  Intel Core i7 13th Gen 16GB RAM 1TBB SSD 13.5 Inch, win11 Touchscreen",
         category: "Hp"
     },
@@ -283,14 +283,7 @@ export const sale_list =[
         category: "Hp"
     },
     //accessories
-    {
-        _id: '13',
-        name: "SSD",
-        image: SATA,
-        price: 13000,
-        description:"Samsung 870 EVO 1TB Internal SSD SATA",
-        category: "disk"
-    },
+    
     {
         _id: '14',
         name: " HDD Drive",
@@ -325,22 +318,8 @@ export const sale_list =[
         description:"Hp m27fw 1920 x 1080 @75HZ, 2xHDMI | 1xVGA'",
         category: "Monitor"
     },
-    {
-        _id: '18',
-        name: "Monitor",
-        image: screen32,
-        price: 12900,
-        description:"Vitron 32 inch Digital LED TV Free to air channels",
-        category: "Monitor"
-    },
-    {
-        _id: '19',
-        name: "Monitor",
-        image: screen_32,
-        price: 12700,
-        description:"Vitron 32 Inch Digital Flat Screen TV + FREE TV Antenna",
-        category: "Monitor"
-    },
+   
+    
     {
         _id: '20',
         name: "charger",
@@ -425,7 +404,7 @@ export const sale_list =[
         _id: '30',
         name: "DDR3 RAM",
         image: ram2,
-        price: 10000,
+        price: 8000,
         description:"SAMSUNG 8GB RAM DDR3 10600",
         category: "ram"
     },
@@ -433,7 +412,7 @@ export const sale_list =[
         _id: '31',
         name: "HP Elitebook",
         image: elitebattery,
-        price: 4999,
+        price: 3999,
         description:"HP Elitebook 840 G3 battery CS03xl Original Hp laptop 14.4V/14.8V,43Wh ",
         category: "Battery"
     },
@@ -441,7 +420,7 @@ export const sale_list =[
         _id: '32',
         name: "Toshiba",
         image: toshiba,
-        price: 4500,
+        price: 4100,
         description:"Toshiba Satellite L50-A laptop Battery, 14.4V/14.8V,43Wh",
         category: "Battery"
     },
@@ -449,7 +428,7 @@ export const sale_list =[
         _id: '33',
         name: "Scan Disk",
         image: flash3,
-        price: 1900,
+        price: 1750,
         description:"32GB SANDISK FLASH DISK",
         category: "flash"
     },
