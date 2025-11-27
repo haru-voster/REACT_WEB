@@ -154,7 +154,7 @@
     "which-typed-array": "^1.1.19",
     "wsl-utils": "^0.1.0"
   },
-  //modified
+  //modified json
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
