@@ -11,7 +11,7 @@ export const StoreContext = createContext({
 export const StoreProvider = ({ children }) => {
   const [cartItems, setCartItems,  accessories_list] = useState({});
   
-  const url = "http://localhost:4000";
+  const url = "http://local:host4000";
   const [token, setToken] = useState("");
   const [sale_list, setSaleList] = useState([])
   // Helper function to get the correct item list based on the selected category
